@@ -1,0 +1,11 @@
+{
+  "name": "@jordantredaniel/skills",
+  "version": "1.0.0",
+  "description": "Personal collection of agent skills for Cursor, OpenCode, and Claude Code. Covers knowledge routing, system design, frontend design, and code patterns.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jordantredaniel/jordantredaniel-skills"
+  },
+  "license": "MIT",
+  "skills": "skills/"
+}
