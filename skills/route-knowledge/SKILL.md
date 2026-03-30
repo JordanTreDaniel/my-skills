@@ -6,7 +6,9 @@ compatibility: cursor opencode
 
 # Route Knowledge: Socratic Classification
 
-Takes raw input — conversation notes, WRAP-UP breadcrumbs, feature descriptions, corrections — and produces a structured knowledge tree grouped by **meta-location**. Does not write anything. Does not determine exact files. That's `place-knowledge`'s job.
+A specialized application of **think-in-trees** (the general tree-building skill). Takes raw input — conversation notes, WRAP-UP breadcrumbs, feature descriptions, corrections — and produces a structured knowledge tree grouped by **meta-location**. Does not write anything. Does not determine exact files. That's `place-knowledge`'s job.
+
+For the general-purpose tree-building method, see **think-in-trees**. This skill applies that method + adds a meta-location filter on top.
 
 ---
 

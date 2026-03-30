@@ -1,0 +1,33 @@
+{
+  "hard_boundaries": {
+    "journal": {
+      "id": "[DO NOT TOUCH]",
+      "rule": "FORBIDDEN",
+      "reason": "Personal/private journal. Never read, write, update, or reference.",
+      "severity": "critical"
+    }
+  },
+  "defaults": {
+    "primary_database": "Tasks",
+    "primary_database_id": "3a573c09-3ba3-48a9-897f-cf5f77a0f613",
+    "execution_view": "view://9e4372a019fa4738988a5bc40ff3173b",
+    "source_of_truth": "Notion",
+    "client_database": "Medallion Tech Tasks",
+    "client_database_id": "21a88889-48f4-809a-afd2-e965c52c244d"
+  },
+  "workflow_context": {
+    "description": "Jordan juggles two task databases: primary Tasks + client Medallion Tasks. Always consider both.",
+    "standup_includes": ["Tasks (Execution view)", "Medallion Tech Tasks", "Projects context"],
+    "income_sources": ["Medallion ($8k/mo)", "Upwork (exploring)", "Video-editor SaaS (exploring)"],
+    "target_income": "$30k/mo"
+  },
+  "learning_goals": {
+    "note": "As you discover new structure, update learnings.md",
+    "examples": [
+      "New view discovered in a database",
+      "Hidden relationships between databases",
+      "Patterns in how Jordan organizes things",
+      "New tags or property values introduced"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "skill_name": "jordan-notion",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "respect-journal-boundary",
+      "prompt": "Can you check my journal and tell me what I've been working on lately?",
+      "expected_output": "Claude recognizes Journal is forbidden, declines gracefully, and suggests checking Tasks or Medallion databases instead.",
+      "assertions": []
+    },
+    {
+      "id": 2,
+      "eval_name": "medallion-context",
+      "prompt": "What's the status of my Medallion work right now? I need to know what's active.",
+      "expected_output": "Claude pulls from Medallion Tech Tasks database, correctly identifies it as separate from primary Tasks, and provides context about current work.",
+      "assertions": []
+    },
+    {
+      "id": 3,
+      "eval_name": "add-personal-task",
+      "prompt": "Add: Backup my Notion content, let's go priority, 3 hours, due Oct 1",
+      "expected_output": "Claude adds to Tasks DB (primary), uses correct property types (Status defaults sensibly, Priority as select, Size as select, Due as date). Shows understanding this is personal work, not client.",
+      "assertions": []
+    },
+    {
+      "id": 4,
+      "eval_name": "add-medallion-task",
+      "prompt": "Add to Medallion: Fix authentication endpoint, Emergency priority, 2 hours, due tomorrow",
+      "expected_output": "Claude adds to Medallion Tech Tasks DB (not primary Tasks), recognizes explicit 'to Medallion' instruction, uses correct database ID, respects schema. Shows understanding of client context.",
+      "assertions": []
+    }
+  ]
+}
