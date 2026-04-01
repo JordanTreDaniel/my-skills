@@ -1,0 +1,21 @@
+name: install-wisprflow
+description: Verifies the agent can install Wispr Flow on the current machine.
+
+task:
+  prompt: |
+    Install Wispr Flow on this computer so the user can log in and use it.
+
+setup:
+  # Remove app if present so we test a clean install
+  - rm -rf "/Applications/Wispr Flow.app"
+
+graders:
+  - name: app_installed
+    type: deterministic
+    command: test -d "/Applications/Wispr Flow.app"
+    weight: 1.0
+    pass_message: "Wispr Flow.app found in /Applications"
+    fail_message: "Wispr Flow.app not found in /Applications"
+
+# pass@1: one attempt must succeed
+pass_criteria: all_graders_pass
